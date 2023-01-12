@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+<body>
+<div class="header">
+<a href="index.html"><img class="photo" src="lab16.png"></a>
+ <a href="lab16.1.html"><button class="button button0">Каталог</button></a>
+  <a href="lab16.2.html"><button class="button button1">Контакти</button></a>
+    <a href="lab16.3.html"><button class="button button2">Про нас</button></a>
+      <a href="lab16.4.html"><button class="button button3">Регістрація</button></a>
+  </div>
+      <hr>
+    <div class="blok">
+      <h1 class="headers">Кросовки Adidas Air Beg super puper sigma magma 1221</h1>
+      <a href="space-1.jpg">
+      <img class="imagers" width="330" height="330" src="space-1.jpg">
+      </a>
+<h1 class="cena">Ціна: 988<h1> <h1 class="cenas">1988<h1>
+<a class="button121" href="lab16.4.html">Купити</a>
+<div class="rozmir">
+<a class="button8">41</a>
+<a class="button8">42</a>
+<a class="button8">43</a>
+<a class="button8">44</a>
+<a class="button8">45</a>
+</div>
+
+
+
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Опис</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Характеристика</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Відгуки</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+
+
+
+
+
+<hr class="eze3">
+<h1 class="eze">Вам може сподобатись:</h1>
+<div class="eze1">
+<a href="space-2.jpg">
+    <img class="imager" width="330" height="330" src="space-2.jpg" alt="">
+</a>
+<a href="space-3.jpg">
+    <img class="imager" width="330" height="330" src="space-3.jpg" alt="">
+</a>
+<a href="space-4.jpg">
+    <img class="imager" width="330" height="330" src="space-4.jpg" alt="">
+</a>
+<a href="space-5.jpg">
+    <img class="imager" width="330" height="330" src="space-5.jpg" alt="">
+</a>
+</div>
+</body>
+</html>
